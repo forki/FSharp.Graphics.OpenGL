@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
@@ -34,6 +35,55 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Graphics.OpenGL.Tests", "tests\FSharp.Graphics.OpenGL.Tests\FSharp.Graphics.OpenGL.Tests.fsproj", "{C2FFD8B0-94E4-473D-855A-7458D2C17BF8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{A02DF281-C11A-4F22-9C26-C7FDD979588F}"
+	ProjectSection(SolutionItems) = preProject
+		includes\diag.txt = includes\diag.txt
+		includes\egl.xml = includes\egl.xml
+		includes\genheaders.py = includes\genheaders.py
+		includes\gl.xml = includes\gl.xml
+		includes\glx.xml = includes\glx.xml
+		includes\Makefile = includes\Makefile
+		includes\readme.pdf = includes\readme.pdf
+		includes\readme.tex = includes\readme.tex
+		includes\reg.py = includes\reg.py
+		includes\reg.pyc = includes\reg.pyc
+		includes\registry.rnc = includes\registry.rnc
+		includes\wgl.xml = includes\wgl.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GL", "GL", "{421F38C4-C3EE-455F-8525-0A0443592B23}"
+	ProjectSection(SolutionItems) = preProject
+		includes\GL\glcorearb.h = includes\GL\glcorearb.h
+		includes\GL\glext.h = includes\GL\glext.h
+		includes\GL\glx.h = includes\GL\glx.h
+		includes\GL\glxext.h = includes\GL\glxext.h
+		includes\GL\wgl.h = includes\GL\wgl.h
+		includes\GL\wglext.h = includes\GL\wglext.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EGL", "EGL", "{E1608094-8AA7-4774-A8DA-33E92073AA85}"
+	ProjectSection(SolutionItems) = preProject
+		includes\EGL\egl.h = includes\EGL\egl.h
+		includes\EGL\eglext.h = includes\EGL\eglext.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GLES", "GLES", "{8128A8A4-D5E7-4A7D-95A5-AA1A54E94AE3}"
+	ProjectSection(SolutionItems) = preProject
+		includes\GLES\gl.h = includes\GLES\gl.h
+		includes\GLES\glext.h = includes\GLES\glext.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GLES2", "GLES2", "{E8E5C834-2C68-495D-BD8B-86A9E4C55704}"
+	ProjectSection(SolutionItems) = preProject
+		includes\GLES2\gl2.h = includes\GLES2\gl2.h
+		includes\GLES2\gl2ext.h = includes\GLES2\gl2ext.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GLES3", "GLES3", "{21FF3E33-1122-4C7F-9CE7-621EE2777493}"
+	ProjectSection(SolutionItems) = preProject
+		includes\GLES3\gl3.h = includes\GLES3\gl3.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,5 +106,10 @@ Global
 		{83F16175-43B1-4C90-A1EE-8E351C33435D} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
 		{8E6D5255-776D-4B61-85F9-73C37AA1FB9A} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
 		{C2FFD8B0-94E4-473D-855A-7458D2C17BF8} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{421F38C4-C3EE-455F-8525-0A0443592B23} = {A02DF281-C11A-4F22-9C26-C7FDD979588F}
+		{E1608094-8AA7-4774-A8DA-33E92073AA85} = {A02DF281-C11A-4F22-9C26-C7FDD979588F}
+		{8128A8A4-D5E7-4A7D-95A5-AA1A54E94AE3} = {A02DF281-C11A-4F22-9C26-C7FDD979588F}
+		{E8E5C834-2C68-495D-BD8B-86A9E4C55704} = {A02DF281-C11A-4F22-9C26-C7FDD979588F}
+		{21FF3E33-1122-4C7F-9CE7-621EE2777493} = {A02DF281-C11A-4F22-9C26-C7FDD979588F}
 	EndGlobalSection
 EndGlobal
